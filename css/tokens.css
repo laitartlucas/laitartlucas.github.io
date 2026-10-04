@@ -1,0 +1,30 @@
+:root {
+  --bg: #0a0b0c;
+  --bg-raised: #0e1012;
+  --surface: #111316;
+  --surface-2: #15181b;
+  --line: #1a1d21;
+  --line-strong: #262b30;
+  --text: #edeeea;
+  --muted: #8e949b;
+  --faint: #7c828a;
+  --accent: #45d09b;
+  --accent-ink: #04140d;
+  --accent-soft: rgba(69, 208, 155, 0.1);
+  --accent-line: rgba(69, 208, 155, 0.38);
+
+  --font-body: "Geist", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --font-serif: "Instrument Serif", Georgia, serif;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 20px;
+
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 48px);
+  --section-y: clamp(96px, 12vw, 160px);
+
+  --ease: cubic-bezier(0.22, 0.8, 0.28, 1);
+  --fast: 200ms;
+}

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucas Matheus Laitart | Soluções digitais sob medida</title>
+  <meta name="description" content="Sites, sistemas, aplicativos, CRMs, dashboards e automações personalizadas para empresas e projetos que precisam sair do papel.">
+  <meta name="theme-color" content="#0a0b0c">
+  <meta property="og:title" content="Lucas Matheus Laitart | Soluções digitais sob medida">
+  <meta property="og:description" content="Transformo ideias e problemas de negócio em soluções digitais funcionais, modernas e personalizadas.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23edeeea'/%3E%3Ccircle cx='25' cy='25' r='4' fill='%2345d09b' stroke='%230a0b0c' stroke-width='2'/%3E%3Ctext x='15' y='21' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%230a0b0c'%3ELL%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#inicio" aria-label="Lucas Matheus Laitart, início">
+        <span class="nav__mark" aria-hidden="true">LL</span>
+        <span>Lucas Laitart</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Processo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="nav__right">
+        <span class="avail"><i aria-hidden="true"></i>Disponível</span>
+        <a class="btn btn--sm btn--light" href="#contato">Iniciar projeto</a>
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <span class="nav__progress" id="nav-progress" aria-hidden="true"></span>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg gridbg gridbg--fade" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__kicker">Lucas Matheus Laitart, soluções digitais</p>
+        <h1>Soluções digitais para transformar ideias em <em class="serif">realidade</em>.</h1>
+
+        <div class="hero__row">
+          <div class="hero__copy">
+            <p>Desenvolvimento de sites, sistemas, aplicativos, CRMs, automações e soluções personalizadas para empresas e projetos que precisam sair do papel.</p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projetos">Ver projetos
+                <svg class="arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn btn--ghost" href="#contato">Vamos conversar</a>
+            </div>
+          </div>
+
+          <div class="console" id="console">
+            <div class="console__bar">
+              <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="console__title">laitart / soluções</span>
+              <span style="width:42px" aria-hidden="true"></span>
+            </div>
+            <div class="console__body">
+              <div class="console__tabs" id="console-tabs" role="tablist" aria-label="Tipos de solução"></div>
+              <div class="console__view" id="console-view" role="tabpanel" aria-live="polite"></div>
+            </div>
+            <div class="console__foot"><i aria-hidden="true"></i>Disponível para projetos personalizados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip">
+      <div class="container strip__inner" aria-label="Tipos de projeto">
+        <span>Sites</span><span>Landing Pages</span><span>Sistemas</span><span>CRMs</span><span>Aplicativos</span><span>Dashboards</span><span>Automações</span><span>Integrações</span><span>APIs</span>
+      </div>
+    </div>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="work__top">
+          <div>
+            <span class="eyebrow">01 — Projetos selecionados</span>
+            <h2>Projetos que transformam problemas em soluções.</h2>
+          </div>
+          <div class="filters" id="project-filters" role="group" aria-label="Filtrar projetos"></div>
+        </div>
+        <div class="projects" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="head">
+          <div>
+            <span class="eyebrow">02 — O que eu desenvolvo</span>
+            <h2>Uma ideia. Uma necessidade. Uma solução.</h2>
+          </div>
+          <p>Cada projeto possui necessidades diferentes. Por isso, desenvolvo soluções personalizadas em vez de tentar encaixar todos os problemas em uma mesma ferramenta.</p>
+        </div>
+        <div class="services" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section" id="processo">
+      <div class="container">
+        <div class="head">
+          <div>
+            <span class="eyebrow">03 — Como funciona</span>
+            <h2>Da conversa inicial ao projeto em funcionamento.</h2>
+          </div>
+        </div>
+        <ol class="process" id="process-list"></ol>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAL -->
+    <section class="section" id="diferencial">
+      <div class="container diff">
+        <div class="diff__copy">
+          <span class="eyebrow">04 — Diferencial</span>
+          <h2>Tecnologia com <em class="serif">visão</em> de negócio.</h2>
+          <p>Além do desenvolvimento, Lucas possui experiência prática com suporte técnico, sistemas empresariais, infraestrutura, bancos de dados e atendimento a usuários. Isso permite compreender não apenas como construir uma aplicação, mas também como ela será utilizada no dia a dia.</p>
+          <p class="equation" aria-label="Visão técnica, mais visão prática, mais foco no problema">
+            <span>Visão técnica</span><i>+</i><span>visão prática</span><i>+</i><span>foco no problema</span>
+          </p>
+        </div>
+        <div class="pillars" id="pillars-list"></div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="section section--tight" id="tecnologias">
+      <div class="container">
+        <div class="head head--small">
+          <div>
+            <span class="eyebrow">05 — Tecnologias</span>
+            <h2>Ferramentas do ofício</h2>
+          </div>
+          <p>As tecnologias mudam conforme o projeto. Estas são as que uso no dia a dia.</p>
+        </div>
+        <div class="tech" id="tech-list"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container about">
+        <div class="about__visual" id="about-visual"></div>
+        <div class="about__copy">
+          <span class="eyebrow">06 — Sobre</span>
+          <h2>Por trás de cada <em class="serif">projeto</em>.</h2>
+          <p>Sou Lucas Matheus Laitart, profissional de tecnologia com experiência em suporte a sistemas, infraestrutura e desenvolvimento de soluções digitais.</p>
+          <p>Ao longo da minha experiência, trabalhei diretamente com sistemas empresariais, bancos de dados, automações, infraestrutura e resolução de problemas reais.</p>
+          <p>Hoje também desenvolvo projetos digitais personalizados, desde landing pages e sites até sistemas completos, CRMs, dashboards e automações.</p>
+          <dl class="facts-list">
+            <div><dt>Atuação</dt><dd>Analista de Tecnologia e suporte a sistemas, EL Sistemas, desde 2024</dd></div>
+            <div><dt>Formação</dt><dd>Ciência da Computação, FIAP (em andamento)</dd></div>
+            <div><dt>Local</dt><dd>Ronda Alta, RS</dd></div>
+          </dl>
+          <a class="btn btn--ghost" href="assets/curriculo.pdf" target="_blank" rel="noopener">Ver currículo (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__bg gridbg gridbg--fade" aria-hidden="true"></div>
+          <div class="cta__copy">
+            <span class="eyebrow">Contato</span>
+            <h2>Tem uma ideia? Vamos tirar ela do <em class="serif">papel</em>.</h2>
+            <p>Se você precisa de um site, sistema, aplicativo, CRM, automação ou uma solução personalizada, vamos conversar sobre o seu projeto.</p>
+            <div class="cta__actions">
+              <a class="btn btn--primary" href="#form-nome" id="cta-start">Iniciar um projeto
+                <svg class="arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn btn--ghost" id="cta-wa" href="#form-nome" hidden></a>
+            </div>
+          </div>
+          <form class="form" id="contact-form" novalidate>
+            <label>Nome<input id="form-nome" name="nome" type="text" autocomplete="name" required></label>
+            <label>E-mail ou WhatsApp<input name="contato" type="text" autocomplete="email" required></label>
+            <label>O que você precisa?
+              <select name="tipo">
+                <option>Site ou landing page</option>
+                <option>Sistema web</option>
+                <option>CRM</option>
+                <option>Aplicativo</option>
+                <option>Automação ou integração</option>
+                <option>Dashboard</option>
+                <option>Outro</option>
+              </select>
+            </label>
+            <label>Conte um pouco sobre o projeto<textarea name="mensagem" rows="4" required></textarea></label>
+            <button class="btn btn--light" type="submit">Enviar mensagem</button>
+            <p class="form__msg" id="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__name"><span class="nav__mark" aria-hidden="true">LL</span>Lucas Matheus Laitart</p>
+        <p class="footer__desc">Desenvolvimento de soluções digitais sob medida.</p>
+      </div>
+      <nav class="footer__links" aria-label="Rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="footer__socials" id="footer-socials"></div>
+    </div>
+    <div class="container footer__legal"><span id="year"></span> Lucas Matheus Laitart. Todos os direitos reservados.</div>
+  </footer>
+
+
+  <script src="js/data/site.js"></script>
+  <script src="js/data/projects.js"></script>
+  <script src="js/data/content.js"></script>
+  <script src="js/mockups.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
