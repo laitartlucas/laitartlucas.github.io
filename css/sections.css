@@ -204,8 +204,7 @@
 .footer { margin-top: clamp(64px, 8vw, 96px); border-top: 1px solid #16191c; }
 .footer__inner { padding-block: 40px 24px; display: grid; grid-template-columns: 1.2fr 1fr auto; gap: 32px; align-items: start; }
 .footer__name { display: flex; align-items: center; gap: 12px; font-weight: 500; }
-.footer__name .nav__mark { width: 24px; height: 24px; font-size: 0.6875rem; border-radius: 6px; }
-.footer__name .nav__mark::after { display: none; }
+.footer__name .nav__mark { width: 26px; height: 26px; border-radius: 6px; }
 .footer__desc { margin-top: 8px; color: var(--muted); font-size: 0.875rem; }
 .footer__links, .footer__socials { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 0.875rem; }
 .footer__links a, .footer__socials a { color: var(--muted); transition: color var(--fast); }
