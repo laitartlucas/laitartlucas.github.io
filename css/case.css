@@ -74,3 +74,6 @@
 /* Não encontrado */
 .notfound { padding-block: clamp(96px, 14vw, 180px); display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
 .notfound p { color: var(--muted); max-width: 46ch; }
+
+.facts__links { display: flex; flex-direction: column; gap: 6px; }
+.gallery__img img { max-height: 620px; object-fit: contain; margin-inline: auto; }

@@ -219,3 +219,6 @@
 .facts-list > div { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 0.9375rem; }
 .facts-list dt { font: 400 0.75rem var(--font-mono); color: var(--faint); padding-top: 3px; }
 .facts-list dd { margin: 0; color: var(--text); }
+
+/* último card sozinho na linha ocupa a largura toda */
+.project:last-child:nth-child(even) { grid-column: 1 / -1; }

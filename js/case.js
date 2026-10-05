@@ -37,7 +37,7 @@
         <div><dt>Categoria</dt><dd>${esc(p.category)}</dd></div>
         <div><dt>Papel</dt><dd>${esc(p.role || "Desenvolvimento")}</dd></div>
         <div><dt>Problema resolvido</dt><dd>${esc(p.problem)}</dd></div>
-        ${p.url ? `<div><dt>Código</dt><dd><a href="${esc(p.url)}" target="_blank" rel="noopener">Ver no GitHub ${NE}</a></dd></div>` : ""}
+        ${(p.site || p.url || (p.links && p.links.length)) ? `<div><dt>Links</dt><dd class="facts__links">${[p.site && { label: "Ver o site no ar", url: p.site }, p.url && { label: p.urlLabel || "Ver o código no GitHub", url: p.url }, ...(p.links || [])].filter(Boolean).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${NE}</a>`).join("")}</dd></div>` : ""}
       </dl>
     </section>
 
