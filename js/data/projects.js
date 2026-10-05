@@ -45,30 +45,6 @@ window.PROJECTS = [
     gallery: [], results: []
   },
   {
-    slug: "sistema-pedidos-online",
-    name: "Sistema de pedidos online",
-    filter: "Sistemas",
-    category: "Sistema Web",
-    description: "Aplicativo de pedidos para o cliente, painel da cozinha e agente de impressão térmica.",
-    problem: "Pedidos chegando por canais diferentes e passados para a cozinha de forma manual.",
-    tech: ["React", "Node.js", "Prisma", "PWA"],
-    mockup: "system", image: "", url: "https://github.com/laitartlucas/Sistema-Bares", placeholder: false,
-    role: "Desenvolvimento",
-    challenge: [
-      "Uma pizzaria precisava receber pedidos online e levá-los até a cozinha sem depender de repasse manual.",
-      "O pedido do cliente, o preparo e a impressão da comanda precisavam funcionar como uma única operação."
-    ],
-    solution: "Um sistema em três partes que conversam entre si: o aplicativo do cliente (PWA), o painel da pizzaria para acompanhar os pedidos e um agente que imprime as comandas em impressora térmica.",
-    features: [
-      "Aplicativo do cliente instalável (PWA)",
-      "Painel da cozinha para acompanhar pedidos",
-      "Agente de impressão térmica",
-      "API própria com banco de dados",
-      "Tipos compartilhados entre as aplicações"
-    ],
-    gallery: [], results: []
-  },
-  {
     slug: "bot-ofertas-ia",
     name: "Bot de ofertas com IA",
     filter: "Automações",
@@ -76,7 +52,7 @@ window.PROJECTS = [
     description: "Painel web que recebe o link de afiliado, usa IA para ler o produto e escrever a oferta, e envia texto, preço e imagem prontos para um grupo de WhatsApp.",
     problem: "Criar a descrição, buscar o preço e formatar cada oferta manualmente, link por link.",
     tech: ["Node.js", "WhatsApp", "Claude API", "Web scraping"],
-    mockup: "automation", image: "", url: "https://github.com/laitartlucas/Afiliate_bot", placeholder: false,
+    mockup: "automation", image: "assets/projects/bot-capa.jpg", url: "https://github.com/laitartlucas/Afiliate_bot", placeholder: false,
     role: "Desenvolvimento",
     challenge: [
       "Quem divulga produtos do Mercado Livre no WhatsApp precisa, para cada link, escrever uma descrição, buscar o preço e formatar a mensagem.",
@@ -91,7 +67,12 @@ window.PROJECTS = [
       "Envio da mensagem com imagem para o grupo",
       "Suporte a links do Mercado Livre, Shopee e Amazon, com vários usuários"
     ],
-    gallery: [], results: []
+    gallery: [
+      { src: "assets/projects/bot-1-painel.png", caption: "Painel do bot: status do WhatsApp, grupo de destino e campo para o link de afiliado. Ilustração fiel à interface." },
+      { src: "assets/projects/bot-2-mensagem.png", caption: "Mensagem gerada pela IA a partir do link, com preço e desconto, e confirmação de envio. Ilustração fiel à interface." },
+      { src: "assets/projects/bot-3-whatsapp.png", caption: "Como a oferta chega no grupo de WhatsApp (imagem do produto omitida)." }
+    ],
+    results: []
   },
   {
     slug: "automacao-dropshipping",
