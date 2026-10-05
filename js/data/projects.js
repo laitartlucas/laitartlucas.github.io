@@ -25,10 +25,10 @@ window.PROJECTS = [
     name: "CRM de agenda com WhatsApp",
     filter: "Sistemas",
     category: "CRM / SaaS",
-    description: "CRM de agendamento com agenda visual, ficha de clientes, dashboard e integração com WhatsApp e Google Calendar.",
+    description: "CRM com painel de indicadores, leads e pipeline comercial, agenda, clientes e integração com WhatsApp e Google Calendar.",
     problem: "Atendimentos e clientes controlados à mão, sem lembretes automáticos nem visão da agenda do mês.",
     tech: ["React", "NestJS", "PostgreSQL", "Google Calendar", "WhatsApp"],
-    mockup: "crm", image: "", url: "https://github.com/laitartlucas/CRM_Luana", placeholder: false,
+    mockup: "crm", image: "assets/projects/crm-capa.jpg", url: "https://github.com/laitartlucas/CRM_Luana", placeholder: false,
     role: "Desenvolvimento",
     challenge: [
       "Uma consultoria de imagem e styling, com uma profissional principal e cerca de 60 atendimentos por mês, precisava organizar agenda, clientes e comunicação em um só lugar.",
@@ -36,13 +36,17 @@ window.PROJECTS = [
     ],
     solution: "Um CRM de agendamento completo, com WhatsApp e Google Calendar integrados nativamente. A agenda, a ficha de cada cliente e os indicadores ficam no mesmo sistema, e os avisos saem de forma automática.",
     features: [
-      "Agenda visual com calendário",
-      "Ficha de clientes e catálogo de serviços",
+      "Painel com indicadores: faturamento, agendamentos, taxa de confirmação, no-show, ocupação da agenda e ticket médio",
+      "Leads, pipeline comercial com funil e origem das leads, com exportação em CSV",
+      "Agenda visual com os agendamentos do dia",
+      "Clientes, serviços e tarefas",
       "Notificações e fluxos de WhatsApp",
-      "Sincronização com o Google Calendar",
-      "Dashboard com indicadores"
+      "Sincronização com o Google Calendar"
     ],
-    gallery: [], results: []
+    gallery: [
+      { src: "assets/projects/crm-painel.jpg", caption: "Painel principal, com indicadores do mês, agendamentos do dia, funil do pipeline e origem das leads. Nomes de clientes e valores em reais ocultados." }
+    ],
+    results: []
   },
   {
     slug: "bot-ofertas-ia",
