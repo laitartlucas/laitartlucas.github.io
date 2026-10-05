@@ -61,12 +61,24 @@
 
     const text = `Olá, Lucas! Meu nome é ${d.nome}.\nPreciso de: ${d.tipo}.\n\n${d.mensagem}\n\nContato: ${d.contato}`;
 
+    if (d._honey) return say("Mensagem enviada. Respondo em breve.", "ok"); /* campo escondido: só robôs preenchem */
+
     if (SITE.formEndpoint) {
+      const payload = {
+        nome: d.nome, contato: d.contato, "tipo de projeto": d.tipo, mensagem: d.mensagem,
+        _subject: `Novo contato pelo portfólio: ${d.tipo}`, _template: "table", _captcha: "false"
+      };
+      if (String(d.contato).includes("@")) payload._replyto = d.contato;
+      const btn = form.querySelector('button[type="submit"]'); btn.disabled = true;
       try {
-        const r = await fetch(SITE.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(d) });
-        if (!r.ok) throw 0;
+        const r = await fetch(SITE.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(payload) });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || j.success === "false" || j.success === false) throw 0;
         form.reset(); return say("Mensagem enviada. Respondo em breve.", "ok");
-      } catch { return say("Não foi possível enviar agora. Tente novamente em instantes.", "err"); }
+      } catch {
+        if (wa) { window.open(waLink(text), "_blank", "noopener"); return say("Não foi possível enviar agora. Abri o WhatsApp com a sua mensagem.", "err"); }
+        return say("Não foi possível enviar agora. Tente novamente em instantes.", "err");
+      } finally { btn.disabled = false; }
     }
     if (wa) { window.open(waLink(text), "_blank", "noopener"); return say("Abrindo o WhatsApp com a sua mensagem.", "ok"); }
     if (SITE.email) { location.href = `mailto:${SITE.email}?subject=${encodeURIComponent("Projeto: " + d.tipo)}&body=${encodeURIComponent(text)}`; return say("Abrindo o seu e-mail com a mensagem pronta.", "ok"); }

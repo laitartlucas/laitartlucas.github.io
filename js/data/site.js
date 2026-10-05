@@ -8,9 +8,11 @@ window.SITE = {
   whatsapp: "5554999258389",
   email: "laitartlucas@gmail.com",
 
-  // Formulário: cole aqui a URL de um serviço (Formspree, Getform, etc.).
+  // Formulário: serviço FormSubmit (formsubmit.co). Na primeira mensagem enviada, ele manda um e-mail
+  // de ativação para o endereço acima; é preciso clicar em "Activate Form" uma vez.
+  // Pode ser trocado por outro serviço (Formspree, Getform, etc.) colando a URL aqui.
   // Sem URL, o formulário abre o WhatsApp (ou o e-mail) com a mensagem pronta.
-  formEndpoint: "",
+  formEndpoint: "https://formsubmit.co/ajax/laitartlucas@gmail.com",
 
   // Redes profissionais: só aparecem no rodapé quando preenchidas.
   socials: {
