@@ -49,6 +49,70 @@ window.PROJECTS = [
     results: []
   },
   {
+    slug: "crm-mentoria",
+    name: "CRM para mentoria de negócios",
+    filter: "Sistemas",
+    category: "CRM / Plataforma",
+    description: "CRM em que cada aluna organiza o próprio funil de vendas, com metas e gamificação, e a mentora acompanha o engajamento da turma sem ver os dados de negócio de ninguém.",
+    problem: "A mentora não tinha como saber quem estava aplicando o método, e as alunas não tinham um funil de vendas organizado.",
+    tech: ["Node.js", "TypeScript", "Fastify", "PostgreSQL", "Playwright"],
+    mockup: "crm", image: "assets/projects/mentoria-painel.jpg", site: "https://laitartlucas.github.io/Indiscutivel_hub_demo/", placeholder: false,
+    role: "Desenvolvimento",
+    challenge: [
+      "Uma mentoria de negócios para empreendedoras precisava de uma ferramenta em que cada aluna colocasse o método em prática: registrar leads, acompanhar negociações e bater metas.",
+      "Ao mesmo tempo, a mentora queria saber quem estava engajada e quem precisava de ajuda, sem ter acesso aos clientes e valores de cada aluna."
+    ],
+    solution: "Um CRM com duas visões. A aluna tem funil de vendas em kanban, tarefas, metas mensais e gamificação. A mentora tem um painel com o engajamento da turma, alertas de risco, notas privadas e sessões de mentoria. A separação dos dados é garantida pelo próprio banco de dados.",
+    features: [
+      "Funil de oportunidades em kanban, com temperatura, motivo de perda e previsão ponderada",
+      "Leads, pessoas, empresas, clientes e produtos",
+      "Tarefas e calendário, com a lista do dia e as atrasadas",
+      "Metas mensais, desafios, conquistas e níveis de evolução",
+      "Painel da mentora com engajamento semanal, alerta de risco e sessões de mentoria",
+      "Equipe com papéis e permissões personalizados",
+      "Login com verificação em duas etapas e convites por link",
+      "Relatórios com exportação em CSV e mensagens prontas para o WhatsApp"
+    ],
+    gallery: [
+      { src: "assets/projects/mentoria-painel.jpg", caption: "Painel da aluna, com o próximo passo e as oportunidades em andamento. Dados fictícios da versão de demonstração." },
+      { src: "assets/projects/mentoria-oportunidades.jpg", caption: "Funil de oportunidades em kanban, com valores por etapa e taxa de conversão." },
+      { src: "assets/projects/mentoria-metas.jpg", caption: "Metas do mês e do trimestre, com o realizado contra a meta." },
+      { src: "assets/projects/mentoria-mentora.jpg", caption: "Painel da mentora: engajamento da turma e alunas que precisam de atenção." }
+    ],
+    results: [
+      { value: "+2.700", label: "testes automatizados de servidor, tela e navegador, sem falhas de acessibilidade" },
+      { value: "Menos de 1 s", label: "para abrir as telas da mentora em um teste com 300 alunas" }
+    ]
+  },
+  {
+    slug: "fototerapia-neonatal",
+    name: "Sistema de fototerapia neonatal domiciliar",
+    filter: "Sistemas",
+    category: "Sistema / Saúde",
+    description: "Sistema para enfermeiras que fazem fototerapia em casa: prontuário do bebê, sessões de tratamento, agenda, financeiro e uma área para os pais registrarem os cuidados.",
+    problem: "Prontuários, agenda, aparelhos e pagamentos controlados em papel e planilhas, longe dos pais e do pediatra.",
+    tech: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma", "Supabase"],
+    mockup: "system", placeholder: false,
+    role: "Desenvolvimento",
+    challenge: [
+      "Uma empresa de fototerapia neonatal domiciliar atende bebês com icterícia em casa: leva o aparelho, acompanha o tratamento e orienta a família.",
+      "Cada atendimento envolve prontuário, controle das sessões, agenda, aparelhos alugados e pagamentos, e as informações precisavam chegar também aos pais e ao pediatra, com segurança."
+    ],
+    solution: "Um sistema web com três acessos. A enfermeira cuida do prontuário, das sessões, da agenda, dos aparelhos e do financeiro. Os pais entram em uma área própria para acompanhar o tratamento e registrar mamadas, fraldas e temperatura. O pediatra recebe um link temporário para ver o relatório, sem precisar de login.",
+    features: [
+      "Cadastro do bebê e prontuário com evolução clínica, em rascunho ou assinada",
+      "Sessões de fototerapia com início, pausa e fim",
+      "Área dos pais para registrar mamadas, fraldas e temperatura",
+      "Agenda de atendimentos, com envio para o Google Agenda",
+      "Financeiro com pagamentos e gráfico de receita",
+      "Controle dos aparelhos: disponível, em uso ou em manutenção",
+      "Documentos em armazenamento privado e relatórios em PDF",
+      "Link para o pediatra com validade de 24 horas, 7 ou 30 dias, que pode ser revogado"
+    ],
+    gallery: [],
+    results: []
+  },
+  {
     slug: "bot-ofertas-ia",
     name: "Bot de ofertas com IA",
     filter: "Automações",
