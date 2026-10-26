@@ -1,7 +1,8 @@
 /* Configurações gerais do site.
    Preencha os campos vazios quando tiver os dados reais. */
 window.SITE = {
-  name: "Lucas Matheus Laitart",
+  name: "Laitart Tech",
+  founder: "Lucas Matheus Laitart",
   tagline: "Desenvolvimento de soluções digitais sob medida.",
 
   // Contato — somente dígitos com DDI. Ex.: "5541999999999"

@@ -17,10 +17,10 @@
 @keyframes rise { from { opacity: 0; transform: translateY(16px); } }
 
 /* ---------- Console ---------- */
-.console { border: 1px solid #1f2327; border-radius: 18px; background: var(--bg-raised); box-shadow: 0 40px 80px -40px rgba(0, 0, 0, 0.8); overflow: hidden; }
+.console { border: 1px solid #1e2825; border-radius: 18px; background: var(--bg-raised); box-shadow: 0 40px 80px -40px rgba(0, 0, 0, 0.8); overflow: hidden; }
 .console__bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
 .console__dots { display: flex; gap: 6px; width: 42px; }
-.console__dots i { width: 10px; height: 10px; border-radius: 50%; background: #23272b; }
+.console__dots i { width: 10px; height: 10px; border-radius: 50%; background: #222c29; }
 .console__title { font: 400 0.75rem var(--font-mono); color: var(--faint); }
 .console__body { display: grid; grid-template-columns: 170px minmax(0, 1fr); }
 .console__tabs { padding: 14px 10px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 2px; }
@@ -49,5 +49,5 @@
 }
 
 /* ---------- Faixa de capacidades ---------- */
-.strip { border-block: 1px solid #16191c; }
+.strip { border-block: 1px solid #131f1c; }
 .strip__inner { padding-block: 22px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 28px; font: 400 0.8125rem var(--font-mono); color: var(--faint); letter-spacing: 0.02em; }

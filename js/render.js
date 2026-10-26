@@ -86,7 +86,7 @@
   /* Sobre */
   const tileIcons = ["layers", "puzzle", "flow", "globe"];
   $("about-visual").innerHTML = SITE.photo
-    ? `<div class="about__photo"><img src="${esc(SITE.photo)}" alt="${esc(SITE.name)}" loading="lazy"></div>`
+    ? `<div class="about__photo"><img src="${esc(SITE.photo)}" alt="${esc(SITE.founder)}, fundador da ${esc(SITE.name)}" loading="lazy"></div>`
     : `<div class="gridbg" aria-hidden="true"></div>` +
       ABOUT_TILES.map((t, i) => `<div class="tile">${icon(tileIcons[i % 4])}<span>${esc(t)}</span></div>`).join("");
 

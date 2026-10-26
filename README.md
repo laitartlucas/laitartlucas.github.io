@@ -1,4 +1,4 @@
-# Portfólio — Lucas Matheus Laitart
+# Laitart Tech — site e portfólio
 
 Site estático (HTML + CSS + JS puro), sem build. Abra `index.html` ou rode `python -m http.server`.
 

@@ -42,7 +42,7 @@
   const waLink = text => `https://wa.me/${wa}${text ? "?text=" + encodeURIComponent(text) : ""}`;
   const btnWa = $("cta-wa");
   if (wa) {
-    btnWa.hidden = false; btnWa.href = waLink("Olá, Lucas! Vi seu portfólio e quero conversar sobre um projeto.");
+    btnWa.hidden = false; btnWa.href = waLink("Olá! Vi o site da Laitart Tech e quero conversar sobre um projeto.");
     btnWa.target = "_blank"; btnWa.rel = "noopener";
     btnWa.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS.wa}</svg>Chamar no WhatsApp`;
   }
@@ -59,7 +59,7 @@
     form.querySelectorAll("input, textarea").forEach(f => f.setAttribute("aria-invalid", missing.includes(f.name)));
     if (missing.length) return say("Preencha nome, contato e mensagem para enviar.", "err");
 
-    const text = `Olá, Lucas! Meu nome é ${d.nome}.\nPreciso de: ${d.tipo}.\n\n${d.mensagem}\n\nContato: ${d.contato}`;
+    const text = `Olá, Laitart Tech! Meu nome é ${d.nome}.\nPreciso de: ${d.tipo}.\n\n${d.mensagem}\n\nContato: ${d.contato}`;
 
     if (d._honey) return say("Mensagem enviada. Respondo em breve.", "ok"); /* campo escondido: só robôs preenchem */
 

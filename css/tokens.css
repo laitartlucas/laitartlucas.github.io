@@ -1,17 +1,17 @@
 :root {
-  --bg: #0a0b0c;
-  --bg-raised: #0e1012;
-  --surface: #111316;
-  --surface-2: #15181b;
-  --line: #1a1d21;
-  --line-strong: #262b30;
-  --text: #edeeea;
-  --muted: #8e949b;
-  --faint: #7c828a;
-  --accent: #45d09b;
-  --accent-ink: #04140d;
-  --accent-soft: rgba(69, 208, 155, 0.1);
-  --accent-line: rgba(69, 208, 155, 0.38);
+  --bg: #070f0d;
+  --bg-raised: #0b1512;
+  --surface: #0d1a16;
+  --surface-2: #121e1b;
+  --line: #172420;
+  --line-strong: #282e2c;
+  --text: #f7f6f2;
+  --muted: #8e9b97;
+  --faint: #7c8a86;
+  --accent: #00ea90;
+  --accent-ink: #00170d;
+  --accent-soft: rgba(0, 234, 144, 0.1);
+  --accent-line: rgba(0, 234, 144, 0.38);
 
   --font-body: "Geist", "Helvetica Neue", system-ui, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
