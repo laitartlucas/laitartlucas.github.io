@@ -56,7 +56,7 @@ window.PROJECTS = [
     description: "CRM em que cada aluna organiza o próprio funil de vendas, com metas e gamificação, e a mentora acompanha o engajamento da turma sem ver os dados de negócio de ninguém.",
     problem: "A mentora não tinha como saber quem estava aplicando o método, e as alunas não tinham um funil de vendas organizado.",
     tech: ["Node.js", "TypeScript", "Fastify", "PostgreSQL", "Playwright"],
-    mockup: "crm", image: "assets/projects/mentoria-painel.jpg", site: "https://laitartlucas.github.io/Indiscutivel_hub_demo/", placeholder: false,
+    mockup: "crm", image: "assets/projects/mentoria-painel.jpg", site: "https://laitarttech.com.br/Indiscutivel_hub_demo/", placeholder: false,
     role: "Desenvolvimento",
     challenge: [
       "Uma mentoria de negócios para empreendedoras precisava de uma ferramenta em que cada aluna colocasse o método em prática: registrar leads, acompanhar negociações e bater metas.",
@@ -92,7 +92,7 @@ window.PROJECTS = [
     description: "Sistema para enfermeiras que fazem fototerapia em casa: prontuário do bebê, sessões de tratamento, agenda, financeiro e uma área para os pais registrarem os cuidados.",
     problem: "Prontuários, agenda, aparelhos e pagamentos controlados em papel e planilhas, longe dos pais e do pediatra.",
     tech: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma", "Supabase"],
-    mockup: "system", placeholder: false,
+    mockup: "system", image: "assets/projects/fototerapia-visao-geral.jpg", placeholder: false,
     role: "Desenvolvimento",
     challenge: [
       "Uma empresa de fototerapia neonatal domiciliar atende bebês com icterícia em casa: leva o aparelho, acompanha o tratamento e orienta a família.",
@@ -109,7 +109,13 @@ window.PROJECTS = [
       "Documentos em armazenamento privado e relatórios em PDF",
       "Link para o pediatra com validade de 24 horas, 7 ou 30 dias, que pode ser revogado"
     ],
-    gallery: [],
+    gallery: [
+      { src: "assets/projects/fototerapia-visao-geral.jpg", caption: "Visão geral da enfermeira, com atalhos e o resumo do dia. Dados fictícios de demonstração." },
+      { src: "assets/projects/fototerapia-prontuario.jpg", caption: "Prontuário do bebê, com resumo clínico e controle da fototerapia em andamento." },
+      { src: "assets/projects/fototerapia-agenda.jpg", caption: "Agenda da semana, com visitas, reavaliações e envio para o Google Agenda." },
+      { src: "assets/projects/fototerapia-financeiro.jpg", caption: "Financeiro, com recebimentos por forma de pagamento e faturamento dos últimos meses." },
+      { src: "assets/projects/fototerapia-familia.jpg", caption: "Área da família, onde os pais registram mamadas, fraldas e temperatura." }
+    ],
     results: []
   },
   {
@@ -188,7 +194,7 @@ window.PROJECTS = [
     description: "Material de leitura online com índice lateral, capítulos, checklist e tema claro e escuro, para ensinar um método de combinação de acessórios.",
     problem: "Um método de consultoria de imagem precisava de um formato digital fácil de consultar.",
     tech: ["HTML", "CSS", "JavaScript"],
-    mockup: "landing", image: "assets/projects/playbook-1.jpg", site: "https://laitartlucas.github.io/Playbook_Luana/", url: "https://github.com/laitartlucas/Playbook_Luana", placeholder: false,
+    mockup: "landing", image: "assets/projects/playbook-1.jpg", site: "https://laitarttech.com.br/Playbook_Luana/", url: "https://github.com/laitartlucas/Playbook_Luana", placeholder: false,
     role: "Desenvolvimento",
     challenge: [
       "Uma consultora de imagem tinha um método para finalizar qualquer look em menos de 2 minutos, escolhendo cinto, bolsa, sapato e acessórios.",
@@ -215,7 +221,7 @@ window.PROJECTS = [
     description: "Teste de sete perguntas que revela o perfil de estilo de quem responde, com escolha por texto ou por imagem e atalhos de teclado.",
     problem: "Conhecer o estilo de cada pessoa de forma leve, antes da consultoria.",
     tech: ["HTML", "CSS", "JavaScript"],
-    mockup: "landing", image: "assets/projects/quiz-1.jpg", site: "https://laitartlucas.github.io/Teste_Luana/", url: "https://github.com/laitartlucas/Teste_Luana", placeholder: false,
+    mockup: "landing", image: "assets/projects/quiz-1.jpg", site: "https://laitarttech.com.br/Teste_Luana/", url: "https://github.com/laitartlucas/Teste_Luana", placeholder: false,
     role: "Desenvolvimento",
     challenge: [
       "Uma consultoria de imagem queria uma forma simples de a pessoa descobrir os estilos que mais combinam com ela.",
@@ -242,7 +248,7 @@ window.PROJECTS = [
     description: "Página de vendas do Desafio Look Pronto, com promessa clara, provas reais, explicação do método e chamada para a inscrição.",
     problem: "Apresentar o desafio e levar a visitante até a inscrição em uma única página.",
     tech: ["HTML", "CSS", "JavaScript"],
-    mockup: "landing", image: "assets/projects/vendas-1.jpg", site: "https://laitartlucas.github.io/Pagina-de-vendas/", url: "https://github.com/laitartlucas/Pagina-de-vendas", placeholder: false,
+    mockup: "landing", image: "assets/projects/vendas-1.jpg", site: "https://laitarttech.com.br/Pagina-de-vendas/", url: "https://github.com/laitartlucas/Pagina-de-vendas", placeholder: false,
     role: "Desenvolvimento",
     challenge: [
       "Um desafio de 7 dias para montar 40 looks com apenas 10 peças precisava de uma página que explicasse a proposta e convencesse a visitante a participar."
