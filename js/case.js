@@ -13,7 +13,7 @@
   document.getElementById("year").textContent = "© " + new Date().getFullYear();
 
   if (i < 0) {
-    document.title = "Projeto não encontrado | Lucas Matheus Laitart";
+    document.title = "Projeto não encontrado | Laitart Tech";
     root.innerHTML = `<div class="container notfound">
       <h1 style="font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-0.04em">Esse projeto não foi encontrado.</h1>
       <p>O link pode estar incompleto ou o projeto foi removido. Veja todos os projetos na página inicial.</p>
@@ -22,7 +22,7 @@
   }
 
   const p = PROJECTS[i], next = PROJECTS[(i + 1) % PROJECTS.length];
-  document.title = `${p.name} | Lucas Matheus Laitart`;
+  document.title = `${p.name} | Laitart Tech`;
   document.querySelector('meta[name="description"]').setAttribute("content", p.description);
 
   const hero = p.image ? `<img src="${esc(p.image)}" alt="Imagem do projeto ${esc(p.name)}">` : mockup(p.mockup);
